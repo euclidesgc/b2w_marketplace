@@ -4,6 +4,9 @@ import 'package:flutter/material.dart';
 import 'package:b2w_marketplace/app/app_widget.dart';
 import 'package:b2w_marketplace/app/modules/home/home_module.dart';
 
+import 'modules/cadastro/cadastro_module.dart';
+import 'modules/login/login_module.dart';
+
 class AppModule extends MainModule {
   @override
   List<Bind> get binds => [
@@ -13,6 +16,8 @@ class AppModule extends MainModule {
   @override
   List<ModularRouter> get routers => [
         ModularRouter(Modular.initialRoute, module: HomeModule()),
+        ModularRouter("/cadastro", module: CadastroModule()),
+        ModularRouter("/login", module: LoginModule()),
       ];
 
   @override
