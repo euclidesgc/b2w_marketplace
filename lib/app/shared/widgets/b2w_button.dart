@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class B2wButton extends StatelessWidget {
-  final Widget child;
+  final String child;
   final Function onPressed;
   final bool border;
   final double height;
@@ -34,7 +34,7 @@ class B2wButton extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
               leftWidget != null ? leftWidget : Container(),
-              child,
+              Text(child, style: Theme.of(context).textTheme.button),
               rightWidget != null ? rightWidget : Container(),
             ],
           ),

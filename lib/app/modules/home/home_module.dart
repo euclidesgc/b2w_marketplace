@@ -1,7 +1,9 @@
+import 'email_enviado/email_enviado_controller.dart';
 import 'package:flutter_modular/flutter_modular.dart';
 
 import 'cadastro/cadastro_controller.dart';
 import 'cadastro/cadastro_page.dart';
+import 'email_enviado/email_enviado_page.dart';
 import 'esqueci_a_senha/esqueci_a_senha_controller.dart';
 import 'esqueci_a_senha/esqueci_a_senha_page.dart';
 import 'home_controller.dart';
@@ -14,6 +16,7 @@ import 'login/login_page.dart';
 class HomeModule extends ChildModule {
   @override
   List<Bind> get binds => [
+        $EmailEnviadoController,
         $ListaParceirosController,
         $EsqueciASenhaController,
         $CadastroController,
@@ -28,6 +31,7 @@ class HomeModule extends ChildModule {
         ModularRouter("/home/cadastro", child: (_, args) => CadastroPage()),
         ModularRouter("/home/esqueci_a_senha", child: (_, args) => EsqueciASenhaPage()),
         ModularRouter("/home/lista_parceiros", child: (_, args) => ListaParceirosPage()),
+        ModularRouter("/home/email_enviado", child: (_, args) => EmailEnviadoPage()),
       ];
 
   static Inject get to => Inject<HomeModule>.of();
