@@ -1,13 +1,13 @@
-import 'package:b2w_marketplace/app/modules/cadastro/cadastro_module.dart';
+import 'package:b2w_marketplace/app/modules/home/home_module.dart';
 import 'package:flutter_modular/flutter_modular_test.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 void main() {
-  initModule(CadastroModule());
+  initModule(HomeModule());
   // CadastroController cadastro;
   //
   setUp(() {
-    //     cadastro = CadastroModule.to.get<CadastroController>();
+    //     cadastro = HomeModule.to.get<CadastroController>();
   });
 
   group('CadastroController Test', () {

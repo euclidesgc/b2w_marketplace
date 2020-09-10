@@ -10,5 +10,22 @@ final ThemeData b2wThemeData = ThemeData(
   primaryColor: generateMaterialColor(Colors.black),
   accentColor: ACCENT_COLOR,
   fontFamily: "Montserrat",
-  textTheme: TextTheme(button: TextStyle(fontSize: 16)),
+  textTheme: TextTheme(
+    button: TextStyle(
+      fontSize: 16,
+      fontFamily: "Montserrat",
+    ),
+    headline1: TextStyle(
+      color: Colors.red,
+      fontWeight: FontWeight.bold,
+      fontSize: 18,
+      fontFamily: "Montserrat",
+    ),
+    bodyText1: TextStyle(
+      color: Colors.black,
+      fontWeight: FontWeight.w700,
+      fontSize: 18,
+      fontFamily: "Montserrat",
+    ),
+  ),
 );

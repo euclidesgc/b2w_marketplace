@@ -14,4 +14,10 @@ abstract class _LoginControllerBase with Store {
   void increment() {
     value++;
   }
+
+  @observable
+  bool passwordVisible = false;
+
+  @action
+  togglePasswordVisibility() => this.passwordVisible = !this.passwordVisible;
 }

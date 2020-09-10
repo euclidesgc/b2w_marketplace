@@ -1,13 +1,13 @@
-import 'package:b2w_marketplace/app/modules/login/login_module.dart';
+import 'package:b2w_marketplace/app/modules/home/home_module.dart';
 import 'package:flutter_modular/flutter_modular_test.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 void main() {
-  initModule(LoginModule());
+  initModule(HomeModule());
   // LoginController login;
   //
   setUp(() {
-    //     login = LoginModule.to.get<LoginController>();
+    //     login = HomeModule.to.get<LoginController>();
   });
 
   group('LoginController Test', () {

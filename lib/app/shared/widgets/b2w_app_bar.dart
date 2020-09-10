@@ -4,7 +4,7 @@ class B2wAppBar extends StatelessWidget implements PreferredSizeWidget {
   final Widget leading;
   final Widget iconeTitulo;
   final List<Widget> actions;
-  final String titulo;
+  final String title;
 
   ///Definido no theme
   final Color tituloCor;
@@ -21,7 +21,7 @@ class B2wAppBar extends StatelessWidget implements PreferredSizeWidget {
   const B2wAppBar({
     Key key,
     this.leading,
-    @required this.titulo,
+    @required this.title,
     this.centralizar = true,
     this.corBgBarra,
     this.corBgTitulo,
@@ -45,7 +45,7 @@ class B2wAppBar extends StatelessWidget implements PreferredSizeWidget {
           children: <Widget>[
             iconeTitulo == null ? Container() : iconeTitulo,
             SizedBox(width: 10),
-            Text(titulo,
+            Text(title,
                 style: TextStyle(color: tituloCor == null ? Theme.of(context).accentColor : tituloCor, fontSize: 16)),
           ],
         ),

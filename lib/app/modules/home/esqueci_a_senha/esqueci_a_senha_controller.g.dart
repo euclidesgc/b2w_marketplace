@@ -1,13 +1,13 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
-part of 'login_controller.dart';
+part of 'esqueci_a_senha_controller.dart';
 
 // **************************************************************************
 // InjectionGenerator
 // **************************************************************************
 
-final $LoginController = BindInject(
-  (i) => LoginController(),
+final $EsqueciASenhaController = BindInject(
+  (i) => EsqueciASenhaController(),
   singleton: true,
   lazy: true,
 );
@@ -18,8 +18,8 @@ final $LoginController = BindInject(
 
 // ignore_for_file: non_constant_identifier_names, unnecessary_brace_in_string_interps, unnecessary_lambdas, prefer_expression_function_bodies, lines_longer_than_80_chars, avoid_as, avoid_annotating_with_dynamic
 
-mixin _$LoginController on _LoginControllerBase, Store {
-  final _$valueAtom = Atom(name: '_LoginControllerBase.value');
+mixin _$EsqueciASenhaController on _EsqueciASenhaControllerBase, Store {
+  final _$valueAtom = Atom(name: '_EsqueciASenhaControllerBase.value');
 
   @override
   int get value {
@@ -34,17 +34,17 @@ mixin _$LoginController on _LoginControllerBase, Store {
     });
   }
 
-  final _$_LoginControllerBaseActionController =
-      ActionController(name: '_LoginControllerBase');
+  final _$_EsqueciASenhaControllerBaseActionController =
+      ActionController(name: '_EsqueciASenhaControllerBase');
 
   @override
   void increment() {
-    final _$actionInfo = _$_LoginControllerBaseActionController.startAction(
-        name: '_LoginControllerBase.increment');
+    final _$actionInfo = _$_EsqueciASenhaControllerBaseActionController
+        .startAction(name: '_EsqueciASenhaControllerBase.increment');
     try {
       return super.increment();
     } finally {
-      _$_LoginControllerBaseActionController.endAction(_$actionInfo);
+      _$_EsqueciASenhaControllerBaseActionController.endAction(_$actionInfo);
     }
   }
 
