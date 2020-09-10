@@ -29,7 +29,7 @@ class _HomePageState extends ModularState<HomePage, HomeController> {
           ),
           Positioned(
             top: 200,
-            child: B2wHorizontalLogo(),
+            child: B2wHorizontalLogo(28),
           ),
           Positioned(
             bottom: 0,
@@ -59,7 +59,7 @@ class _HomePageState extends ModularState<HomePage, HomeController> {
                     B2wButton(
                       Text("Criar conta", style: TextStyle(fontSize: 18)),
                       leftWidget: Icon(Icons.add),
-                      onPressed: () => Modular.to.pushNamed("/cadastro"),
+                      onPressed: () => Modular.to.pushNamed("/home/cadastro"),
                     ),
                     SizedBox(height: 20),
                     B2wButton(
@@ -67,7 +67,7 @@ class _HomePageState extends ModularState<HomePage, HomeController> {
                       leftWidget: Icon(Icons.send),
                       border: true,
                       color: Colors.white,
-                      onPressed: () => Modular.to.pushNamed("/login"),
+                      onPressed: () => Modular.to.pushNamed("/home/login"),
                     ),
                   ],
                 ),

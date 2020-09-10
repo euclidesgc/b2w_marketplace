@@ -3,7 +3,9 @@ import 'package:flutter/material.dart';
 import '../constants.dart';
 
 class B2wHorizontalLogo extends StatelessWidget {
-  const B2wHorizontalLogo({
+  final double size;
+  const B2wHorizontalLogo(
+    this.size, {
     Key key,
   }) : super(key: key);
 
@@ -21,7 +23,7 @@ class B2wHorizontalLogo extends StatelessWidget {
                 fontFamily: "Montserrat",
                 fontWeight: FontWeight.bold,
                 color: ACCENT_COLOR,
-                fontSize: 28,
+                fontSize: size,
               ),
             ),
             TextSpan(
@@ -29,7 +31,7 @@ class B2wHorizontalLogo extends StatelessWidget {
               style: TextStyle(
                 fontWeight: FontWeight.bold,
                 color: Colors.white,
-                fontSize: 28,
+                fontSize: size,
               ),
             ),
           ],

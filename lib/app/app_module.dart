@@ -1,11 +1,9 @@
-import 'app_controller.dart';
-import 'package:flutter_modular/flutter_modular.dart';
-import 'package:flutter/material.dart';
 import 'package:b2w_marketplace/app/app_widget.dart';
 import 'package:b2w_marketplace/app/modules/home/home_module.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_modular/flutter_modular.dart';
 
-import 'modules/cadastro/cadastro_module.dart';
-import 'modules/login/login_module.dart';
+import 'app_controller.dart';
 
 class AppModule extends MainModule {
   @override
@@ -16,8 +14,6 @@ class AppModule extends MainModule {
   @override
   List<ModularRouter> get routers => [
         ModularRouter(Modular.initialRoute, module: HomeModule()),
-        ModularRouter("/cadastro", module: CadastroModule()),
-        ModularRouter("/login", module: LoginModule()),
       ];
 
   @override
