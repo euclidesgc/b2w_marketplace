@@ -1,8 +1,7 @@
 import 'package:flutter_modular/flutter_modular_test.dart';
 import 'package:flutter_test/flutter_test.dart';
 
-import 'package:b2w_marketplace/b2w_marketplace/app/app_controller.dart';
-import 'package:b2w_marketplace/b2w_marketplace/app/app_module.dart';
+import '../../lib/app/app_module.dart';
 
 void main() {
   initModule(AppModule());
