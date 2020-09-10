@@ -57,13 +57,13 @@ class _HomePageState extends ModularState<HomePage, HomeController> {
                   children: <Widget>[
                     Container(width: MediaQuery.of(context).size.width),
                     B2wButton(
-                      Text("Criar conta", style: TextStyle(fontSize: 18)),
+                      "Criar conta",
                       leftWidget: Icon(Icons.add),
                       onPressed: () => Modular.to.pushNamed("/home/cadastro"),
                     ),
                     SizedBox(height: 20),
                     B2wButton(
-                      Text("Acessar sua conta", style: TextStyle(fontSize: 18)),
+                      "Acessar sua conta",
                       leftWidget: Icon(Icons.send),
                       border: true,
                       color: Colors.white,

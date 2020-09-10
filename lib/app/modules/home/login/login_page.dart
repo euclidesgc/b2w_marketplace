@@ -77,7 +77,7 @@ class _LoginPageState extends ModularState<LoginPage, LoginController> {
               ),
               SizedBox(height: 30),
               B2wButton(
-                Text("Entrar"),
+                "Entrar",
                 onPressed: () => Modular.to.pushNamed("/home/lista_parceiros"),
               )
             ],
