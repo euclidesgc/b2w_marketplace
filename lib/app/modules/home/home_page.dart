@@ -1,3 +1,4 @@
+import 'package:b2w_marketplace/app/shared/constants.dart';
 import 'package:b2w_marketplace/app/shared/widgets/b2w_button.dart';
 import 'package:b2w_marketplace/app/shared/widgets/b2w_horizontal_logo.dart';
 import 'package:flutter/material.dart';
@@ -22,7 +23,7 @@ class _HomePageState extends ModularState<HomePage, HomeController> {
       body: Stack(
         children: [
           Image.asset(
-            'assets/images/background_b2wmarketplace.jpg',
+            BACKGROUND_IMAGE,
             width: double.infinity,
             height: double.infinity,
             fit: BoxFit.cover,
@@ -59,7 +60,7 @@ class _HomePageState extends ModularState<HomePage, HomeController> {
                     B2wButton(
                       "Criar conta",
                       leftWidget: Icon(Icons.add),
-                      onPressed: () => Modular.to.pushNamed("/home/cadastro"),
+                      onPressed: () => Modular.to.pushNamed("/cadastro_seller"),
                     ),
                     SizedBox(height: 20),
                     B2wButton(
@@ -67,7 +68,7 @@ class _HomePageState extends ModularState<HomePage, HomeController> {
                       leftWidget: Icon(Icons.send),
                       border: true,
                       color: Colors.white,
-                      onPressed: () => Modular.to.pushNamed("/home/login"),
+                      onPressed: () => Modular.to.pushNamed("/login"),
                     ),
                   ],
                 ),
