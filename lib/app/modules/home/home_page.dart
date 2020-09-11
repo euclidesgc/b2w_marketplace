@@ -29,7 +29,7 @@ class _HomePageState extends ModularState<HomePage, HomeController> {
           ),
           Positioned(
             top: 200,
-            child: B2wHorizontalLogo(28),
+            child: B2wHorizontalLogo(size: 28),
           ),
           Positioned(
             bottom: 0,

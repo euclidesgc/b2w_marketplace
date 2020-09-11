@@ -19,18 +19,18 @@ final $ListaParceirosController = BindInject(
 // ignore_for_file: non_constant_identifier_names, unnecessary_brace_in_string_interps, unnecessary_lambdas, prefer_expression_function_bodies, lines_longer_than_80_chars, avoid_as, avoid_annotating_with_dynamic
 
 mixin _$ListaParceirosController on _ListaParceirosControllerBase, Store {
-  final _$valueAtom = Atom(name: '_ListaParceirosControllerBase.value');
+  final _$pesquisarAtom = Atom(name: '_ListaParceirosControllerBase.pesquisar');
 
   @override
-  int get value {
-    _$valueAtom.reportRead();
-    return super.value;
+  bool get pesquisar {
+    _$pesquisarAtom.reportRead();
+    return super.pesquisar;
   }
 
   @override
-  set value(int value) {
-    _$valueAtom.reportWrite(value, super.value, () {
-      super.value = value;
+  set pesquisar(bool value) {
+    _$pesquisarAtom.reportWrite(value, super.pesquisar, () {
+      super.pesquisar = value;
     });
   }
 
@@ -38,11 +38,11 @@ mixin _$ListaParceirosController on _ListaParceirosControllerBase, Store {
       ActionController(name: '_ListaParceirosControllerBase');
 
   @override
-  void increment() {
+  void setPesquisar() {
     final _$actionInfo = _$_ListaParceirosControllerBaseActionController
-        .startAction(name: '_ListaParceirosControllerBase.increment');
+        .startAction(name: '_ListaParceirosControllerBase.setPesquisar');
     try {
-      return super.increment();
+      return super.setPesquisar();
     } finally {
       _$_ListaParceirosControllerBaseActionController.endAction(_$actionInfo);
     }
@@ -51,7 +51,7 @@ mixin _$ListaParceirosController on _ListaParceirosControllerBase, Store {
   @override
   String toString() {
     return '''
-value: ${value}
+pesquisar: ${pesquisar}
     ''';
   }
 }

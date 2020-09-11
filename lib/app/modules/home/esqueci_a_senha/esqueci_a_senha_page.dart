@@ -22,7 +22,7 @@ class _EsqueciASenhaPageState extends ModularState<EsqueciASenhaPage, EsqueciASe
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: B2wHorizontalLogo(16),
+        title: B2wHorizontalLogo(size: 16),
       ),
       body: SingleChildScrollView(
         child: Padding(
