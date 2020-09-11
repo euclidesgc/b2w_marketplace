@@ -1,7 +1,3 @@
 //COLORS
 
-import 'dart:ui';
-
-import 'package:flutter/material.dart';
-
-const Color ACCENT_COLOR = Color(0xff3FEDD4);
+const String BACKGROUND_IMAGE = "assets/images/background_b2wmarketplace.jpg";
