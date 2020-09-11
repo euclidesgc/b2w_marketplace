@@ -23,7 +23,7 @@ class _LoginPageState extends ModularState<LoginPage, LoginController> {
 
     return Scaffold(
       appBar: AppBar(
-        title: B2wHorizontalLogo(16),
+        title: B2wHorizontalLogo(size: 16),
       ),
       body: SingleChildScrollView(
         child: Padding(

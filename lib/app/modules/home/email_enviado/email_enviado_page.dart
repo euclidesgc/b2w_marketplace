@@ -20,7 +20,7 @@ class _EmailEnviadoPageState extends ModularState<EmailEnviadoPage, EmailEnviado
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: B2wHorizontalLogo(16),
+        title: B2wHorizontalLogo(size: 16),
       ),
       body: SingleChildScrollView(
         child: Column(
