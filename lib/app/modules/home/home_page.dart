@@ -1,6 +1,7 @@
 import 'package:b2w_marketplace/app/shared/constants.dart';
 import 'package:b2w_marketplace/app/shared/widgets/b2w_button.dart';
 import 'package:b2w_marketplace/app/shared/widgets/b2w_horizontal_logo.dart';
+import 'package:b2w_marketplace/generated/l10n.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_modular/flutter_modular.dart';
 
@@ -27,6 +28,33 @@ class _HomePageState extends ModularState<HomePage, HomeController> {
             width: double.infinity,
             height: double.infinity,
             fit: BoxFit.cover,
+          ),
+          Positioned(
+            top: 300,
+            child: Container(
+              width: MediaQuery.of(context).size.width,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
+                  RaisedButton(
+                    child: Text("Português"),
+                    onPressed: () {
+                      setState(() {
+                        S.load(Locale('pt', 'BR'));
+                      });
+                    },
+                  ),
+                  RaisedButton(
+                    child: Text("Inglês"),
+                    onPressed: () {
+                      setState(() {
+                        S.load(Locale('en'));
+                      });
+                    },
+                  ),
+                ],
+              ),
+            ),
           ),
           Positioned(
             top: 200,
@@ -58,13 +86,13 @@ class _HomePageState extends ModularState<HomePage, HomeController> {
                   children: <Widget>[
                     Container(width: MediaQuery.of(context).size.width),
                     B2wButton(
-                      "Criar conta",
+                      S.of(context).pageHomeCreateAccount,
                       leftWidget: Icon(Icons.add),
                       onPressed: () => Modular.to.pushNamed("/cadastro_seller"),
                     ),
                     SizedBox(height: 20),
                     B2wButton(
-                      "Acessar sua conta",
+                      S.of(context).pageHomeAccessAccount,
                       leftWidget: Icon(Icons.send),
                       border: true,
                       color: Colors.white,

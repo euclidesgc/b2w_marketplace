@@ -1,6 +1,7 @@
 import 'package:b2w_marketplace/app/shared/widgets/b2w_button.dart';
 import 'package:b2w_marketplace/app/shared/widgets/b2w_horizontal_logo.dart';
 import 'package:b2w_marketplace/app/shared/widgets/b2w_text_field.dart';
+import 'package:b2w_marketplace/generated/l10n.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:flutter_modular/flutter_modular.dart';
@@ -80,7 +81,8 @@ class _LoginPageState extends ModularState<LoginPage, LoginController> {
               ),
               SizedBox(height: 30),
               B2wButton(
-                "Entrar",
+                // "Entrar",
+                S.of(context).pageLoginEnter,
                 onPressed: () => Modular.to.pushNamed("/lista_parceiros"),
               )
             ],
