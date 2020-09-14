@@ -16,6 +16,7 @@ class PrincipalPage extends StatefulWidget {
 class _PrincipalPageState extends ModularState<PrincipalPage, PrincipalController> {
   final GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
   int _currentIndex = 0;
+
   final List<Widget> _children = [
     DashboardPage(),
     PedidosPage(),
